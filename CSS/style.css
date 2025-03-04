@@ -20,55 +20,19 @@ body {
   padding: 0;
   height: 100vh;
   width: 100%;
-  background-image:  ;
+  background-color: rgba(224, 196, 160, 0.473);
 }
 
 header {
+  background-color: var(--cor3);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  position: fixed;
   margin: 0;
   padding: 0;
   height: 12vh;
-  /* width: 100%; */
-  background-color: var(--cor3);
-}
-
-main {
-  min-width: 300px;
-  max-width: 1000px;
-  margin: auto;
-  padding: 5.7em;
-  background-color: white;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.455);
-  margin-bottom: 30px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-/* main {
-  padding: 0;
   width: 100%;
-  max-width: 738px;
-  height: 88vh;
-  box-sizing: border-box;
-  border: 2px solid black;
-  margin: 0 auto;
-}  */
+}
 
-#contact {
-  text-align: center;
-  margin-top: 10em;
-  color: white;
-}
-#contact h2 {
-  font-size: 2em;
-  margin-bottom: 1em;
-  position: relative;
-  top: -2em;
-  left: 10em;
-}
-#contact h2 p {
-  margin-bottom: 1em;
-  position: relative;
-  left: 10em;
-}
 /* arrumando o menu cabeçalho */
 #menu0 {
   margin-left: 1em;
@@ -98,13 +62,125 @@ main {
 }
 
 #menu0 ul li a:hover {
-  color: var(--cor3);
+  text-decoration: underline;
+  color: var(--cor2);
   transform: scale(1.2); /* aumenta o tamanho em 20% */
 }
 
 #logo {
   transform: scale(0.3);
   position: relative;
-  top: -10.5em;
-  margin-left: 28em;
+  top: -10.2em;
+  margin-left: 45em;
+}
+
+/* Arrumando o main */
+main {
+  min-width: 300px;
+  max-width: 1000px;
+  margin: auto;
+  height: 40em;
+  padding: 3.7em;
+  background-color: rgba(109, 72, 3, 0.5);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  margin-bottom: 30px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* Imagem da mulher sorrindo main */
+#mulher {
+  box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.514);
+  border-radius: 0px 16px 0px 16px;
+  transform: scale(0.5);
+  position: absolute;
+  left: 10%;
+  top: -56.5px;
+}
+
+/* Arrumando o Título do main */
+
+#container h2 {
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 10px rgb(116, 70, 2);
+  font-size: 2em;
+  margin-bottom: 8em;
+  position: relative;
+  font-size: 2em;
+  margin-bottom: 8em;
+  position: relative;
+  top: 1em;
+  left: 6em;
+  align-items: center;
+}
+
+/* Arrumando o parágrafo do main */
+
+#container p {
+  position: absolute;
+  left: 48em;
+  top: 18em;
+  width: 23em;
+  color: rgb(255, 255, 255);
+}
+
+/* arrumando a div geral de título e parágrafo */
+
+#container {
+  line-height: 2em;
+  height: 24em;
+  text-align: center;
+  margin-top: 10em;
+  color: rgb(255, 255, 255);
+}
+
+/* Arrumando menu do main */
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: -4em 16em 0em 16em;
+  padding: 1em;
+  background-color: var(--cor2);
+  box-shadow: 1px 1px 20px 7px rgba(0, 0, 0, 0.2);
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+.menu ul {
+  display: flex;
+  gap: 2em;
+  list-style: none;
+}
+
+.menu ul li {
+  margin: 0 10px;
+}
+
+.menu ul li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.2s ease-in-out;
+}
+
+.menu ul li a:hover {
+  text-decoration: underline;
+  color: black;
+  transition: 1s;
+}
+
+footer {
+  background-color: var(--cor3);
+  font-weight: bold;
+  font-size: 1em;
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  text-align: center;
+  padding: 5px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }

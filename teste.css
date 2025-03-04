@@ -1,0 +1,207 @@
+@charset 'utf-8';
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap');
+
+:root {
+   --cor1: #6f4e37; /*Marrom Café (cor primária)*/
+   --cor2: #d9b382; /*Bege Claro (cor secundária)*/
+   --cor3: #3e2723; /*Marrom Escuro (cor Acento)*/
+   --cor4: white; /*Branco (cor de texto)*/
+   --cor5: black; /*Preto (cor de texto)*/
+ }
+
+header {
+  background-color: var(--cor1);
+  padding: 10px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+header nav img {
+  height: 70px;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header nav ul li {
+  margin: 0 10px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: var(--cor4);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  color: var(--cor2);
+}
+
+main {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  padding: 20px;
+  font-family: 'Merriweather';
+}
+
+section {
+  position: relative;
+  bottom: 10px;
+  width: 350px;
+}
+
+section h1 {
+  text-align: center;
+  font-size: 2.5em;
+}
+
+section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: var(--cor2);
+}
+
+section form label {
+  font-weight: bold;
+  color: var(--cor1);
+}
+
+section form input {
+  border-radius: 5px;
+  border: 2px solid var(--cor1);
+  outline: unset;
+}
+
+section form textarea {
+  outline: unset;
+  border: 2px solid var(--cor1);
+}
+
+section form button {
+  margin-top: 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--cor1);
+  color: var(--cor4);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+footer {
+  background-color: var(--cor3);
+  font-weight: bold;
+  font-size: 1em;
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  text-align: center;
+  padding: 5px;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Media Queries para responsividade */
+
+/* Estilos para telas de celular */
+@media (max-width: 480px) {
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header nav ul li {
+    margin: 5px 0;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  section {
+    width: 100%;
+  }
+
+  section form {
+    width: 90%;
+  }
+
+  section h1 {
+    font-size: 2em;
+  }
+}
+
+/* Estilos para telas de tablet */
+@media (max-width: 768px) {
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header nav ul li {
+    margin: 5px 0;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  section {
+    width: 100%;
+  }
+
+  section form {
+    width: 90%;
+  }
+
+  section h1 {
+    font-size: 2.2em;
+  }
+}
+
+/* Estilos para telas de desktop */
+@media (min-width: 769px) {
+  header nav ul {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  header nav ul li {
+    margin: 0 10px;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  section {
+    width: 50%;
+  }
+
+  section form {
+    width: 100%;
+  }
+
+  section h1 {
+    font-size: 2.5em;
+  }
+}
